@@ -15,8 +15,7 @@ body {
 }
 
 .container .home-content{
-    width: 80%;
-    
+    width: 75%;
     top: 100%;
     position: relative;
     display: flex;
