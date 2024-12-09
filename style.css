@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-family: "Nunito", sans-serif;
+    background: url('./photos/background.jpg') no-repeat center/cover;
+    text-align: center;
+    padding:2rem;
+    flex-direction: column;
+}
+
+.container .home-content{
+    width: 80%;
+    
+    top: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.container .card .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.container .card:nth-child(1) .photo {
+    background: #e07768;
+}
+
+.container .card:nth-child(2) .photo {
+    background: #6eadd4;
+}
+
+.container .card:nth-child(3) .photo {
+    background: #4aada9;
+}
+
+
+.container .card .photo .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.container a {
+    text-decoration: none;
+    color: #414141;
+
+}
+
+.home-content{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-35%,-27%);
+}
+
+.home-content h3{
+    font-size: clamp(.7rem,1vw + 2rem, 3.5rem);
+    color: #fff;
+    font-family: "Balsamiq Sans", serif;
+
+}
+
+.home-content h2{
+    font-size: clamp(.7rem,1vw + 2rem, 3.5rem);
+    color: #fff;
+    font-family: "Balsamiq Sans", serif;
+
+}
+.home-content h1{
+    font-size: clamp(1.5rem,1vw + 3.5rem, 4.5rem);
+    color: #062436;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+#h1{
+    text-align: center;
+
+}
